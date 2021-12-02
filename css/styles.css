@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cyan: hsl(177, 68%, 64%);
+    --orange: hsl(12, 94%, 65%);
+    --darkyellow: hsl(33, 100%, 70%);
+    --white: hsl(20, 33%, 98%);
+    --black: hsl(244, 23%, 12%);
+}
+
+html {
+    background-image: url("../assets/bg-main-desktop.png");
+    background-size: 115%;
+    background-repeat: no-repeat;
+    background-position: top -12rem left -15rem;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.logo {
+    margin-top: 3rem;
+    margin-left: 10rem;
+    width: 10%;
+    height: 10%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+main h1 {
+    margin-top: 12rem;
+    margin-left: 10rem;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 6rem;
+    letter-spacing: 0.1rem;
+}
+
+main img {
+    margin-top: -8.5rem;
+    width: 20%;
+}
+
+.presentation p {
+    margin-top: 2rem;
+    margin-left: 10rem;
+    width: 56%;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+.premium {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25rem;
+    margin-left: 10rem;
+    background-color: var(--black);
+    width: 85rem;
+    height: 45rem;
+    border-radius: 1rem;
+}
+
+.icon-mobile {
+    margin-top: -17rem;
+    margin-left: 10rem;
+    width: 22rem;
+    height: 50rem;
+    z-index: 2;
+}
+
+.sketch {
+    width: 25rem;
+    height: 35rem;
+    margin-top: -2rem;
+    margin-left: -6.25rem;
+    z-index: 1;
+}
+
+.premium-hq {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    margin-left: -6rem;
+    width: 30rem;
+    height: 45rem;
+    background-color: var(--orange);
+    border-radius: 1rem;
+    z-index: 2;
+}
+
+.premium-hq h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--white);
+    letter-spacing: 0.12rem;
+    padding: 4.5rem 0 0 3rem;
+}
+
+.description {
+    font-size: 1.4rem;
+    color: var(--white);
+    line-height: 2.5rem;
+    width: 88%;
+    letter-spacing: 0.02rem;
+    padding: 2rem 0 0 3rem;
+}
+
+.price {
+    font-size: 5rem;
+    color: var(--white);
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+.price span {
+    vertical-align: super;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.ios {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--white);
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    text-align: center;
+    width: 22.5rem;
+    height: auto;
+    background-color: var(--black);
+    border-radius: 1rem;
+    margin: 1rem 0 0 0;
+    padding: 1rem 0 1rem 0;
+}
+
+.ios:hover {
+    cursor: pointer;
+    background-color: var(--cyan);
+    transform: scale(1.1);
+    transition: all 0.45s;
+}
+
+.android {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--black);
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    text-align: center;
+    width: 22.5rem;
+    height: auto;
+    background-color: var(--white);
+    border-radius: 1rem;
+    margin: 2rem 0 0 0;
+    padding: 1rem 0 1rem 0;
+}
+
+.android:hover {
+    cursor: pointer;
+    background-color: var(--darkyellow);
+    transform: scale(1.1);
+    transition: all 0.45s;
+}
+
+.links img {
+    width: auto;
+}
+
+.links span {
+    vertical-align: super;
+    margin-left: 0.8rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    margin: 15rem 0 10rem 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.credits {
+    display: flex;
+    flex-direction: column;
+}
+
+.credits p {
+    margin: 3rem 0 0 12rem;
+    width: 50%;
+    font-size: 1.1rem;
+    font-weight: 200;
+    line-height: 2rem;
+}
+
+.credits span {
+    font-weight: 600;
+}
+
+.social-medias {
+    margin: 2rem 0 0 12rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20%;
+}
+
+.social-medias img {
+    margin: 0 1rem 0 0.5rem;
+    width: 7%;
+}
+
+.social-medias img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.15s;
+    filter: var(--orange)(100%);
+    -webkit-filter: var(--orange)(100%);
+}
+
+@media (max-width: 768px) {
+    html {
+        background-image: url("../assets/bg-main-tablet.png");
+        background-size: 150%;
+        background-position: top -15rem left -22rem;
+    }
+    .logo {
+        margin-top: 4rem;
+        margin-left: 3rem;
+        width: 18%;
+        height: 18%;
+    }
+    main h1 {
+        margin-top: 4rem;
+        margin-left: 3rem;
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    main img {
+        margin-top: -8rem;
+        margin-left: 4rem;
+        width: 30%;
+        height: 30%;
+    }
+    .presentation p {
+        margin-top: 1.5rem;
+        margin-left: 3rem;
+        width: 69%;
+        font-size: 1.15rem;
+        line-height: 2rem;
+        letter-spacing: 0.01rem;
+    }
+    .premium {
+        margin-top: 16rem;
+        margin-left: 3rem;
+        width: 42rem;
+        height: 40rem;
+    }
+    .icon-mobile {
+        margin-top: -10rem;
+        margin-left: 4rem;
+        width: 18rem;
+        height: 38rem;
+    }
+    .sketch {
+        margin-top: -2.5rem;
+        margin-left: -7rem;
+        width: 18rem;
+        height: 25rem;
+    }
+    .premium-hq {
+        margin-top: 9rem;
+        margin-left: -17.1rem;
+        width: 23rem;
+        height: 37rem;
+    }
+    .premium-hq h2 {
+        font-size: 2rem;
+        padding: 4.2rem 0 0 3rem;
+    }
+    .description {
+        font-size: 1rem;
+        line-height: 1.8rem;
+        width: 90%;
+        padding: 0.8rem 0 0 3rem;
+    }
+    .price {
+        margin-top: 1.5rem;
+        margin-left: 3rem;
+        font-size: 4rem;
+    }
+    .price span {
+        margin-left: 1.1rem;
+        font-size: 1.4rem;
+    }
+    .links {
+        margin-top: 0.7rem;
+    }
+    .ios {
+        margin: 1rem 0 0 0;
+        font-size: 1rem;
+        width: 16rem;
+        padding-bottom: 1.3rem;
+    }
+    .android {
+        margin: 1rem 0 0 0;
+        font-size: 1rem;
+        width: 16rem;
+        padding-bottom: 1.2rem;
+    }
+    footer {
+        margin-top: 8rem;
+    }
+    .credits {
+        position: relative;
+        top: 8rem;
+        left: -10rem;
+    }
+    .credits p {
+        margin: 0 auto;
+        width: 90%;
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    .social-medias {
+        margin: 10rem 5rem 0 0;
+    }
+    .social-medias img {
+        width: 20%;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        background-image: url("../assets/bg-main-mobile.png");
+        background-size: 300%;
+        background-position: top -22rem left;
+    }
+    .logo {
+        width: 75%;
+    }
+    main h1 {
+        margin-top: 6rem;
+        font-size: 3.2rem;
+        line-height: 3.5rem;
+        letter-spacing: 0.1rem;
+    }
+    main img {
+        display: none;
+    }
+    .presentation p {
+        margin-top: 2rem;
+        width: 28rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.1rem;
+    }
+    .premium {
+        margin-top: 15rem;
+        margin-left: 0;
+        width: 35rem;
+        height: 60rem;
+        border-radius: 1.2rem;
+    }
+    .icon-mobile {
+        margin-top: -11rem;
+        margin-left: 26%;
+        width: 16rem;
+        height: 34rem;
+    }
+    .sketch {
+        margin-top: 0;
+        margin-left: -18rem;
+        width: 22rem;
+        height: 28rem;
+    }
+    .premium-hq {
+        margin-top: 26rem;
+        margin-left: -28.1rem;
+        width: 105%;
+        height: 48rem;
+        border-radius: 1rem;
+    }
+    .premium-hq h2 {
+        font-size: 2.6rem;
+        letter-spacing: 0.1rem;
+        padding: 3.8rem 0 0 4rem;
+    }
+    .description {
+        font-size: 1.5rem;
+        font-weight: 400;
+        width: 86%;
+        line-height: 2.5rem;
+        padding: 2rem 0 0 4rem;
+    }
+    .price {
+        margin: 2rem 0 0 4rem;
+        font-size: 5.2rem;
+    }
+    .price span {
+        margin-left: 2rem;
+        font-size: 1.8rem;
+    }
+    .ios {
+        font-size: 1.4rem;
+        letter-spacing: 0.08rem;
+        width: 28rem;
+        padding-bottom: 1.6rem;
+    }
+    .android {
+        font-size: 1.4rem;
+        letter-spacing: 0.08rem;
+        width: 28rem;
+        padding-bottom: 1.6rem;
+        margin: 1.5rem 0 0 0;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin: 15rem 0 5rem 0;
+    }
+    .credits {
+        top: 3rem;
+        left: 3rem;
+    }
+    .credits p {
+        font-size: 1.35rem;
+        font-weight: 400;
+        width: 130%;
+        line-height: 2.5rem;
+    }
+    .social-medias {
+        margin: 8rem 0 0 3rem;
+    }
+    .social-medias img {
+        width: 40%;
+        height: auto;
+    }
+}
